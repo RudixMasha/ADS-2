@@ -10,7 +10,6 @@ double pown(double value, uint16_t n) {
         return value * pown(value, n-1);
     }
 }
-}
 
 uint64_t fact(uint16_t n) {
   uint64_t res = n, schet = n;
@@ -37,7 +36,7 @@ double expn(double x, uint16_t count) {
 
 double sinn(double x, uint16_t count) {
   double sum = 0;
-    for (i; i > 0; i--) {
+    for (uint16_t i; i > 0; i--) {
         sum += pown(-1, i-1) * calcItem(x, 2*i-1);
     }
     return sum;
@@ -45,7 +44,7 @@ double sinn(double x, uint16_t count) {
 
 double cosn(double x, uint16_t count) {
   double sum = 0;
-    for (i; i > 0; i--) {
+    for (uint16_t i; i > 0; i--) {
         sum += pown(-1, i-1) * calcItem(x, 2*i-2);
     }
     return sum;
