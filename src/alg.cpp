@@ -37,14 +37,14 @@ double expn(double x, uint16_t count) {
 
 double sinn(double x, uint16_t count) {
   double sum = 0;
-    for (i; i > 0; i++) {
+    for (i; i > 0; i--) {
         sum += pown(-1, i-1) * calcItem(x, 2*i-1);
     }
     return sum;
 }
 
 double cosn(double x, uint16_t count) {
-  double sum = 0
+  double sum = 0;
     for (i; i > 0; i--) {
         sum += pown(-1, i-1) * calcItem(x, 2*i-2);
     }
